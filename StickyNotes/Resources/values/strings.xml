@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">StickyNotes</string>
+    <string name="title_add_notes">Add note</string>
+    <string name="title_view_notes">View notes</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="add_note">Add note</string>
+    <string name="remove_notes">Remove notes</string>
+</resources>

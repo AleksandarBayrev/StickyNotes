@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation"
+        android:layout_marginRight="0.0dp">
+
+    </android.support.design.widget.BottomNavigationView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_below="@+id/data"
+        android:id="@+id/add_note"
+        android:text="@string/add_note"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="308.5dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/data"
+        android:layout_marginRight="50.0dp" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/results"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbars="vertical|horizontal" />
+    <Button
+        android:text="@string/remove_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="72.5dp"
+        android:id="@+id/remove_notes" />
+
+</RelativeLayout>

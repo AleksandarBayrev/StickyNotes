@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StickyNotes", "StickyNotes\StickyNotes.csproj", "{AEEE651D-870C-4A9B-9B24-C225FF29B294}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StickyNotes.MainLogic", "StickyNotes.MainLogic\StickyNotes.MainLogic.csproj", "{6F79532F-C58E-411A-81CC-B4DCB27081A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEEE651D-870C-4A9B-9B24-C225FF29B294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEEE651D-870C-4A9B-9B24-C225FF29B294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEEE651D-870C-4A9B-9B24-C225FF29B294}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AEEE651D-870C-4A9B-9B24-C225FF29B294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEEE651D-870C-4A9B-9B24-C225FF29B294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEEE651D-870C-4A9B-9B24-C225FF29B294}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6F79532F-C58E-411A-81CC-B4DCB27081A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F79532F-C58E-411A-81CC-B4DCB27081A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F79532F-C58E-411A-81CC-B4DCB27081A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F79532F-C58E-411A-81CC-B4DCB27081A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {148FA094-C1A4-4DCE-8065-E8EBC685283A}
+	EndGlobalSection
+EndGlobal

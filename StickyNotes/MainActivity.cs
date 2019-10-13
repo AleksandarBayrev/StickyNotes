@@ -6,6 +6,8 @@ using Android.Support.V7.App;
 using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
+using StickyNotes.MainLogic;
+using StickyNotes.MainLogic.Contracts;
 using StickyNotes.Resources.enums;
 using System.Collections.Generic;
 
@@ -14,7 +16,7 @@ namespace StickyNotes
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity, BottomNavigationView.IOnNavigationItemSelectedListener
     {
-        private StickyNotes.MainLogic.StickyNotesManager stickyNotesManager = StickyNotes.MainLogic.StickyNotesManager.Instance;
+        private StickyNotesManager stickyNotesManager = StickyNotesManager.GetInstance(new List<INote>());
         AppCompatEditText editor;
         Dictionary<ButtonNames, Button> buttons = new Dictionary<ButtonNames, Button>();
         TextView results;

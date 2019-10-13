@@ -11,21 +11,22 @@ namespace StickyNotes.MainLogic
         private static StickyNotesManager instance = null;
         private const string noNotes = "No notes";
         private IList<INote> notes;
-        private StickyNotesManager()
+        
+        internal StickyNotesManager()
         {
             this.notes = new List<INote>();
         }
-
-        public static StickyNotesManager Instance
+        internal StickyNotesManager(IList<INote> notes)
         {
-            get
+            this.notes = notes;
+        }
+        public static StickyNotesManager GetInstance(IList<INote> notes)
+        {
+            if (instance == null)
             {
-                if (instance == null)
-                {
-                    instance = new StickyNotesManager();
-                }
-                return instance;
+                instance = new StickyNotesManager(notes);
             }
+            return instance;
         }
 
         public void AddNote(string Message)
